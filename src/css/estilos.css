@@ -1,0 +1,156 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('../img/fundo-base.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+a:link {
+    color: #f1ecff;
+}
+
+a:visited {
+    color: cadetblue;
+}
+.cabecalho {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.cabecalho h1 {
+    color: #f1ecff;
+    font-size: 45px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.cabecalho h3 {
+    color: #f1ecff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+}
+
+.filmes-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.lista-filmes {
+    width: 330px;
+    height: 700px;
+    position: relative;
+}
+
+.btn-seta {
+    background-color: #ffffff;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease-in-out; 
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.btn-seta.btn-voltar {
+    transform: rotateY(180deg);
+}
+
+.btn-seta:hover {
+    background-color: #e2a200;    
+}
+
+.cartao {
+    opacity: 0;
+    height: 100%;
+    position: absolute;
+    padding: 12px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cartao.selecionado {
+    opacity: 1;
+    z-index: 1;
+}
+
+/* .cartao .poster-filme {
+    width: 100%;
+    max-height: 250px;
+} */
+
+.cartao .nome {
+    background-color: rgba(179, 177, 185, 0.7);
+    padding: 8px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #ffffff;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.cartao .descricao {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.cartao .descricao .titulo {
+    background-color: #333333;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 12px;
+}
+
+.cartao .descricao .texto {
+    font-size: 14px;
+    padding: 12px;
+    text-align: justify;
+    max-height: 110px;
+    overflow-y: auto;
+}
+
+.cartao.cor-1 {
+    background: #066935;
+}
+
+/* .cartao.cor-2 {
+    background: #fbe6c2;
+} */
+
+.cartao.cor-3 {
+    background: #817b8a;
+}
+
+.cartao.cor-4 {
+    background: #c32122;
+}
+
+.cartao.cor-5 {
+    background: #6e6e6e;
+}
+
+.cartao.cor-6 {
+    background: #559d8d;
+}
+
+.rodape {
+    text-align: center;
+    padding: 60px 0;
+    color: #f1ecff;
+    font-size: 10px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}

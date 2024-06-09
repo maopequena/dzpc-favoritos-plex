@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <title>Projeto Favoritos do Plex - Semana do Zero ao Programador Contratado</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>Meus favoritos no Plex</h1>
+        <h3>Uma seleção dos filmes e séries mais bem avaliados no meu Plex</h3>
+    </header>
+    <main class="filmes-slider">
+        <button class="btn-seta btn-voltar" id="btn-voltar">
+            <img src="./src/img/seta.png" alt="seta para voltar a imagem">
+        </button>
+        
+        <ul class="lista-filmes">
+            <li class="cartao selecionado cor-4">
+                <h2 class="nome">Um Salto para a Felicidade (Overboard, 1987)</h2>
+
+                <img class="poster-filme" src="./src/img/overboard-small.jpg" alt="Pôster de Um Salto para a Felicidade" />
+
+                <div class="descricao">
+                    <h3 class="titulo">Descrição</h3>
+                    <p class="texto">Joanna Stayton contrata o carpinteiro Dean Proffitt para montar um armário em seu iate e se nega a pagá-lo quanto o projeto fica pronto. Mas depois dela acidentalmente cair ao mar e perder a memória, Dean vê uma oportunidade de se vingar.</p>
+                </div>
+            </li>
+
+            <li class="cartao cor-1">
+                <h2 class="nome">Breaking Bad (Série, 2008)</h2>
+
+                <img class="poster-filme" src="./src/img/breaking-bad-small.jpg" alt="Pôster de Breaking Bad: A Química do Mal" />
+
+                <div class="descricao">
+                    <h3 class="titulo">Descrição</h3>
+                    <p class="texto">Walter White, um professor de química do Novo Mexico, é diagnosticado com câncer e recebe um prognóstico de viver apenas mais dois anos. Isso lhe dá uma sensação de invencibilidade e um desejo de garantir o futuro financeiro de sua família a qualquer custo, entrando, assim, no perigoso mundo das drogas e do crime.</p>
+                </div>
+            </li>
+
+            <!-- <li class="cartao cor-2">
+                <h2 class="nome">O Senhor dos Anéis: A Sociedade do Anel (The Fellowship of the Ring, 2001)</h2>
+
+                <img class="imagem-personagem" src="./src/img/lotr-1-small.jpg" alt="Pôster de O Senhor dos Anéis: A Sociedade do Anel" />
+
+                <div class="descricao">
+                    <h3 class="titulo">Descrição</h3>
+                    <p class="texto">Em uma terra fantástica e única, um hobbit recebe de presente de seu tio um anel mágico e maligno que precisa ser destruído antes que caia nas mãos do mal. Para isso, o hobbit Frodo tem um caminho árduo pela frente, onde encontra perigo, medo e seres bizarros. Ao seu lado para o cumprimento desta jornada, ele aos poucos pode contar com outros hobbits, um elfo, um anão, dois humanos e um mago, totalizando nove pessoas que formam a Sociedade do Anel.</p>
+                </div>
+            </li> -->
+            <li class="cartao cor-3">
+                <h2 class="nome">We Were the Lucky Ones (Série, 2024)</h2>
+
+                <img class="poster-filme" src="./src/img/lucky-ones-small.jpg" alt="Pôster de Fomos os que Tiveram Sorte" />
+
+                <div class="descricao">
+                    <h3 class="titulo">Descrição</h3>
+                    <p class="texto">A história real de uma família judia separada no início da Segunda Guerra Mundial, determinada a sobreviver – e a se reunir.</p>
+                </div>
+            </li>
+            <li class="cartao cor-5">
+                <h2 class="nome">A Lista de Schindler (Schindler's List, 1993)</h2>
+
+                <img class="poster-filme" src="./src/img/schindlers-list-small.jpg" alt="Pôster de A Lista de Schindler" />
+
+                <div class="descricao">
+                    <h3 class="titulo">Descrição</h3>
+                    <p class="texto">O alemão Oskar Schindler viu na mão-de-obra judia uma solução barata e viável para lucrar com negócios durante a guerra. Com sua forte influência dentro do partido nazista, foi fácil conseguir as autorizações e abrir uma fábrica. O que poderia parecer uma atitude de um homem não muito bondoso, transformou-se em um dos maiores casos de amor à vida da História, pois este alemão abdicou de toda sua fortuna para salvar a vida de mais de mil judeus em plena luta contra o extermínio alemão.</p>
+                </div>
+            </li>
+            <li class="cartao cor-6">
+                <h2 class="nome">A Gentleman in Moscow (Série, 2024)</h2>
+
+                <img class="poster-filme" src="./src/img/gentleman-small.jpg" alt="Pôster de Um Cavalheiro em Moscou" />
+
+                <div class="descricao">
+                    <h3 class="titulo">Descrição</h3>
+                    <p class="texto">Depois da Revolução Russa, o Conde Alexander Rostov fica preso no hotel Metropol em Moscou, tornando-se um exilado em seu próprio país. Conforme o regime soviético sucumbe à tirania, o conde descobre o valor do amor, da coragem e da comunidade.</p>
+                </div>
+            </li>
+        </ul>
+        
+        <button class="btn-seta btn-avancar" id="btn-avancar">
+            <img src="./src/img/seta.png" alt="seta para voltar a imagem">
+        </button>
+    </main>
+    <footer class="rodape">
+        <p>Criado por <b>Lizandra Silva</b></p>
+        <p>@maopequena</p>
+        <p>Clique <a href="mailto:lizandra.c.s@gmail.com" target="_blank" rel="noopener" rel="noreferrer">aqui</a> para me enviar um e-mail!</p>
+    </footer>
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
